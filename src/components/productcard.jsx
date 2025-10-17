@@ -64,13 +64,12 @@ export default function ProductCard({ title, image, description, category, price
           alignItems: 'center',
         }}
       >
-        <span
-          style={{
-            fontWeight: 'bold',
-            color: '#2b6cb0',
-          }}
-        >
-          €{price}
+        <span>
+        {new Intl.NumberFormat('de-DE',{
+          style:"currency",
+          currency:"EURO"
+        }).format(price)}
+      
         </span>
 
         <HowMany />

@@ -27,7 +27,7 @@ export default function Products() {
           color: '#555',
         }}
       >
-        Loading products...
+        Loading products.WAAAIT...
       </div>
     )
   }
